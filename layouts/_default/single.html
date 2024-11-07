@@ -1,0 +1,66 @@
+{{ partial "header.html" . }}
+
+<!-- Main content section -->
+<section class="section-2">
+  <div class="w-layout-vflex flex-block-33">
+    <div class="w-layout-hflex flex-block-32">
+      <div class="w-layout-vflex flex-block-35">
+        <div class="w-layout-hflex flex-block-34">
+          <img src="../images/arrow_left.svg" loading="lazy" alt="" />
+          <a href="../news.html" class="link-3">Back to all articles</a>
+        </div>
+      </div>
+      <div class="w-layout-vflex flex-block-37">
+        <div class="container">
+          <!-- Title and Meta -->
+          <h1 class="blogpost-header-1">{{ .Title }}</h1>
+          <div class="w-layout-hflex flex-block-36">
+            <div class="blogpost-caption">{{ .Params.author }}</div>
+            <div class="blogpost-caption">{{ .Date.Format "January 2, 2006" }}</div>
+          </div>
+
+          <!-- Main Content -->
+          <div class="blog-content">
+            {{ .Content 
+              | replaceRE "(<p>)(.*?)(</p>)" "<p class=\"blogpost-body-2\">$2</p>" 
+              | replaceRE "(<li>)(.*?)(</li>)" "<li class=\"blogpost-body-2\">$2</li>" 
+              | replaceRE "<h2([^>]*)>" "<h2 class=\"blogpost-header-2\"$1>" 
+              | replaceRE "<h3([^>]*)>" "<h3 class=\"blogpost-header-3\"$1>"
+              | safeHTML }}
+          </div>
+        </div>
+      </div>
+      <a href="../news.html" class="pricing_button light w-inline-block">
+        <div>Back to All Articles</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
+
+<!-- 
+img desktop - mt 24px mb 16px
+    tablet  - mt 20px mb 12px
+    mobile  - mt 16px mb 8px
+code desktop - mt 24px
+     tablet  - mt 20px
+     mobile  - mt 16px
+h2, hr desktop - mt 48px
+     tablet  - mt 36px
+     mobile  - mt 28px
+p,quote desktop - mt 24px
+     tablet  - mt 20px
+     mobile  - mt 16px
+quote destop - padding - 40px bg - #d7f2fe;
+      tablet - padding - 32px
+      mobile - padding - 20px
+h3 desktop - mt 28px
+     tablet  - mt 24px
+     mobile  - mt 20px
+ul desktop - mt  16px
+   tablet  - mt  12px
+   mobile  - mt 12px
+li desktop - mt 12px
+   tablet  - mt 8px
+   mobile  - mt 8px -->

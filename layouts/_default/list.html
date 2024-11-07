@@ -1,0 +1,44 @@
+{{ partial "header.html" . }}
+
+<section class="articles">
+  <div class="div-block-8">
+    <div class="div-block-3-copy">
+      <div class="w-layout-hflex flex-block-13">
+        <h2 class="header_2 black">Stay Up to Speed</h2>
+      </div>
+      
+      <!-- Parent container for the blog post items -->
+      <div class="w-layout-hflex flex-block-15">
+        {{ range .Pages }}
+        <!-- Each blog post as an 'a' tag link with the necessary classes -->
+        <a href="{{ .RelPermalink }}" class="blog-index-link w-inline-block">
+          
+          <!-- Main wrapper div inside the 'a' tag -->
+          <div class="w-layout-vflex article-index">
+            
+            <!-- Blog Image -->
+            {{ if .Params.image }}
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" width="Auto" class="image-2" />
+            {{ end }}
+            
+            <!-- Content wrapper div for date and title -->
+            <div class="w-layout-vflex flex-block-14">
+              
+              <!-- Blog Date -->
+              <div class="caption_1">{{ .Date.Format "Jan 2, 2006" }}</div>
+              
+              <!-- Blog Title -->
+              <div class="article-title">{{ .Title }}</div>
+              
+            </div>
+            
+          </div>
+          
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "footer.html" . }}

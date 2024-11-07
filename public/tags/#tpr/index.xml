@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>#TPR on </title>
+    <link>//localhost:1313/tags/%23tpr/</link>
+    <description>Recent content in #TPR on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 25 Oct 2024 11:00:51 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%23tpr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stocks surge and plummet pre-market, Tesla leads with 13% gain.</title>
+      <link>//localhost:1313/blog/stocks-surge-and-plummet-premarket-tesla-leads-with-13-gain/</link>
+      <pubDate>Fri, 25 Oct 2024 11:00:51 +0000</pubDate>
+      <guid>//localhost:1313/blog/stocks-surge-and-plummet-premarket-tesla-leads-with-13-gain/</guid>
+      <description>Deckers Outdoor and Tesla show strong pre-market gains on robust earnings, while Capri Holdings face setbacks.</description>
+    </item>
+  </channel>
+</rss>

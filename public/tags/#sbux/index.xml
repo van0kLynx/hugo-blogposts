@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>#SBUX on </title>
+    <link>//localhost:1313/tags/%23sbux/</link>
+    <description>Recent content in #SBUX on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 24 Oct 2024 14:41:51 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%23sbux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tesla shines; stocks surge amidst mixed market sentiments.</title>
+      <link>//localhost:1313/blog/tesla-shines-stocks-surge-amidst-mixed-market-sentiments/</link>
+      <pubDate>Thu, 24 Oct 2024 14:41:51 +0000</pubDate>
+      <guid>//localhost:1313/blog/tesla-shines-stocks-surge-amidst-mixed-market-sentiments/</guid>
+      <description>Tesla shares rose 11% on strong earnings; McDonald&amp;rsquo;s fell 7% amid an E. coli investigation.</description>
+    </item>
+  </channel>
+</rss>

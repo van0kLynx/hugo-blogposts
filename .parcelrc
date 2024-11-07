@@ -1,0 +1,26 @@
+{
+  "extends": "@parcel/config-default",
+  "targets": {
+    "default": {
+      "distDir": "static/admin",
+      "publicUrl": "/admin",
+      "includeNodeModules": {
+        "netlify-cms-app": true,
+        "netlify-cms-backend-fs": true
+      },
+      "outputFormat": "global",
+      "sourceMap": false,
+      "minify": false,
+      "contentHash": false,
+      "engines": {
+        "browsers": [
+          "> 0.5%",
+          "last 2 versions",
+          "not dead"
+        ]
+      },
+      "optimize": false,
+      "isLibrary": false
+    }
+  }
+}

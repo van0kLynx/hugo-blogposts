@@ -1,0 +1,22 @@
+backend:
+  name: git
+  repo: "./"                   # Use the current directory as the Git repo
+  branch: main                  # Or the branch you want to use
+  local_backend: false     # Enables local backend mode for Decap CMS
+
+site_url: http://localhost:1313  # Make sure this matches your local Hugo server URL
+
+media_folder: "assets/uploads"   # Folder where uploaded media will be stored
+public_folder: "/public/images" # Public URL for accessing media files
+
+collections:
+  - name: "posts"              # Unique identifier for the collection
+    label: "Posts"             # Display name in the CMS
+    folder: "content/blog"      # Folder where content files are stored
+    create: true               # Allows users to create new items in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # Format for generated slugs
+    fields:                    # Fields available for editing in the CMS
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm" }
+      - { label: "Cover Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
