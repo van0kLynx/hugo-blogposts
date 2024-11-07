@@ -1,6 +1,8 @@
 backend:
-  name: test-repo           # Mock backend for local testing
-  local_backend: true       # Enables local backend mode for Decap CMS
+  name: git
+  repo: "./"                   # Use the current directory as the Git repo
+  branch: main                  # Or the branch you want to use
+  local_backend: false     # Enables local backend mode for Decap CMS
 
 site_url: http://localhost:1313  # Make sure this matches your local Hugo server URL
 
@@ -10,7 +12,7 @@ public_folder: "/public/images" # Public URL for accessing media files
 collections:
   - name: "posts"              # Unique identifier for the collection
     label: "Posts"             # Display name in the CMS
-    folder: "/content"           # Folder where content files are stored
+    folder: "content/blog"      # Folder where content files are stored
     create: true               # Allows users to create new items in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # Format for generated slugs
     fields:                    # Fields available for editing in the CMS
