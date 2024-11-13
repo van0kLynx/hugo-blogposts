@@ -6,7 +6,7 @@ backend:
   base_url: "https://github.com/login/oauth/authorize"
   auth_endpoint: "https://github.com/login/oauth/access_token"
   client_id: "Ov23liG2cXs8T4YfxhoM"
-  client_secret: "a262a5a2f9dc7136d07b26bbe5df8b48a78cdc49"
+  client_secret: "4b335a5e71be597485ad888529116af8a68bff66"
 
 site_url: "https://van0kLynx.github.io/hugo-blogposts" # GitHub Pages URL
 
