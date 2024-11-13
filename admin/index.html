@@ -6,6 +6,14 @@
   <script src="https://cdn.jsdelivr.net/npm/decap-cms@latest/dist/decap-cms.js"></script>
 </head>
 <body>
-  <!-- CMS should auto-initialize without explicit init call -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (typeof DecapCMS !== 'undefined') {
+        DecapCMS.init();
+      } else {
+        console.error('DecapCMS is not defined');
+      }
+    });
+  </script>
 </body>
 </html>
