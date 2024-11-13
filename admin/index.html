@@ -6,10 +6,13 @@
   <script src="https://cdn.jsdelivr.net/npm/decap-cms@latest/dist/decap-cms.js"></script>
 </head>
 <body>
+  <!-- Explicit CMS mount point -->
+  <div id="decap-cms"></div>
+
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       if (typeof DecapCMS !== 'undefined') {
-        DecapCMS.init();
+        DecapCMS.init({ config: { mountPoint: '#decap-cms' } });
       } else {
         console.error('DecapCMS is not defined');
       }
