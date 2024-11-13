@@ -1,8 +1,8 @@
 backend:
-  name: git
-  repo: "./"                   # Use the current directory as the Git repo
+  name: test-repo
+  repo: "user/repo"                   # Use the current directory as the Git repo
   branch: main                  # Or the branch you want to use
-  local_backend: false     # Enables local backend mode for Decap CMS
+  local_backend: true     # Enables local backend mode for Decap CMS
 
 site_url: http://localhost:1313  # Make sure this matches your local Hugo server URL
 
