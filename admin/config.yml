@@ -1,8 +1,11 @@
 backend:
   name: github
-  repo: "van0kLynx/hugo-blogposts" # GitHub repo in "user/repo" format
+  repo: "van0klynx/hugo-blogposts"
   branch: main
   auth_scope: "repo"
+  base_url: "https://github.com/login/oauth/authorize"
+  auth_endpoint: "https://github.com/login/oauth/access_token"
+  app_id: "Ov23liG2cXs8T4YfxhoM"
 
 site_url: "https://van0kLynx.github.io/hugo-blogposts" # GitHub Pages URL
 
