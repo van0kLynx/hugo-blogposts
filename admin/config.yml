@@ -1,11 +1,12 @@
 backend:
   name: github
-  repo: "van0klynx/hugo-blogposts"
+  repo: "van0kLynx/hugo-blogposts"
   branch: main
   auth_scope: "repo"
   base_url: "https://github.com/login/oauth/authorize"
   auth_endpoint: "https://github.com/login/oauth/access_token"
-  app_id: "Ov23liG2cXs8T4YfxhoM"
+  client_id: "Ov23liG2cXs8T4YfxhoM"
+  client_secret: "a262a5a2f9dc7136d07b26bbe5df8b48a78cdc49"
 
 site_url: "https://van0kLynx.github.io/hugo-blogposts" # GitHub Pages URL
 
@@ -13,12 +14,12 @@ media_folder: "assets/uploads"     # Folder where uploaded media will be stored
 public_folder: "/public/images"     # Public URL for accessing media files
 
 collections:
-  - name: "posts"                  # Unique identifier for the collection
-    label: "Posts"                 # Display name in the CMS
-    folder: "content/blog"         # Folder where content files are stored
-    create: true                   # Allows users to create new items in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Format for generated slugs
-    fields:                         # Fields available for editing in the CMS
+  - name: "posts"
+    label: "Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm" }
       - { label: "Cover Image", name: "image", widget: "image", required: false }
