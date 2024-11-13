@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Decap CMS</title>
-  <script src="https://cdn.jsdelivr.net/npm/decap-cms@latest/dist/decap-cms.js"></script>
 </head>
 <body>
   <!-- Explicit CMS mount point -->
@@ -11,11 +10,17 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      if (typeof DecapCMS !== 'undefined') {
-        DecapCMS.init({ config: { mountPoint: '#decap-cms' } });
-      } else {
-        console.error('DecapCMS is not defined');
-      }
+      // Dynamically load decap-cms.js after DOM is ready
+      const script = document.createElement("script");
+      script.src = "https://cdn.jsdelivr.net/npm/decap-cms@latest/dist/decap-cms.js";
+      script.onload = function() {
+        if (typeof DecapCMS !== 'undefined') {
+          DecapCMS.init({ config: { mountPoint: '#decap-cms' } });
+        } else {
+          console.error('DecapCMS is not defined');
+        }
+      };
+      document.body.appendChild(script);
     });
   </script>
 </body>
