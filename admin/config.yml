@@ -8,7 +8,7 @@ backend:
   client_id: "Ov23liG2cXs8T4YfxhoM"
   client_secret: "4b335a5e71be597485ad888529116af8a68bff66"
 
-site_url: "https://van0kLynx.github.io/hugo-blogposts" # GitHub Pages URL
+site_url: "https://van0kLynx.github.io/hugo-blogposts/admin" # GitHub Pages URL
 
 media_folder: "assets/uploads"     # Folder where uploaded media will be stored
 public_folder: "/public/images"     # Public URL for accessing media files
