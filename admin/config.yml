@@ -1,11 +1,10 @@
 backend:
-  name: github                   # Sets the backend to GitHub
-  repo: "van0kLynx/hugo-blogposts" # GitHub repo name in "user/repo" format
-  branch: main                   # Target branch
-  auth_scope: "repo"             # Defines the permissions needed
-  base_url: "http://localhost:1313" # Base URL for Hugo when testing locally
+  name: github
+  repo: "van0kLynx/hugo-blogposts" # GitHub repo in "user/repo" format
+  branch: main
+  auth_scope: "repo"
 
-site_url: "http://localhost:1313" # Matches local Hugo server URL
+site_url: "https://van0kLynx.github.io/hugo-blogposts" # GitHub Pages URL
 
 media_folder: "assets/uploads"     # Folder where uploaded media will be stored
 public_folder: "/public/images"     # Public URL for accessing media files
