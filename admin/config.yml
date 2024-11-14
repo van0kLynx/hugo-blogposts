@@ -4,6 +4,7 @@ backend:
   branch: main  # The branch you want to use
   base_url: https://api.netlify.com
   auth_endpoint: /auth
+  publish_mode: editorial_workflow
 
 site_url: "https://helpful-gumdrop-4afd41.netlify.app"  # Replace with your Netlify site URL
 
