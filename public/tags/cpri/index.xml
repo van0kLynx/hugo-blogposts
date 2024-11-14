@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>#CPRI on </title>
+    <title>CPRI on </title>
     <link>//localhost:1313/tags/%23cpri/</link>
-    <description>Recent content in #CPRI on </description>
+    <description>Recent content in #PRI on </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 25 Oct 2024 11:00:51 +0000</lastBuildDate>
