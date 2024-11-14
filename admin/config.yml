@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: van0kLynx/hugo-blogposts  # Your GitHub repository
   branch: main  # The branch you want to use
   base_url: https://api.netlify.com
