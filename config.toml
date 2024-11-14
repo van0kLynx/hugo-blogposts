@@ -1,3 +1,13 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Your Site Title"
+
+[outputs]
+home = ["HTML"]
+page = ["HTML"]
+section = ["HTML"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
