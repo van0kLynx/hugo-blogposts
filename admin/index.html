@@ -5,18 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Content Manager</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 <body>
-  <!-- Explicit CMS mount point -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const script = document.createElement("script");
-      const script2 = document.createElement("script");
-      script.src = "https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js";
-      script2.src = "https://identity.netlify.com/v1/netlify-identity-widget.js";
-      document.body.appendChild(script);
-      document.body.appendChild(script2);
-    });
-  </script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
