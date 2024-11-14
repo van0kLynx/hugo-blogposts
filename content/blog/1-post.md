@@ -12,7 +12,7 @@ author: "By Adam Lambert, Managing Director, Zimtra Asset Management"
 
 Zimtra is excited to announce its partnership with Conscious Trading Academy to sponsor the upcoming **3rd Conscious Trading Conference**. This collaboration marks a significant milestone in our commitment to promoting conscious trading practices and financial education.
 
-## About the Partnership
+## About the Partnershi
 
 Provide details about the partnership:
 
