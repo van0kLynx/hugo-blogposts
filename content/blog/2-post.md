@@ -8,7 +8,7 @@ author: "By Chalenne Carroll, Zimtra Asset Management"
 
 ![Zimtra and Conscious Trading Academy Partnership](/images/BlogMadridConferenceRev_LINandReddit-1_1.png)
 
-> The STC Madrid Summit was a major gathering for trading enthusiasts and industry professionals. This event, held in Madrid, highlighted new trading strategies, provided networking opportunities, and underscored Zimtra’s role as a prominent industry partner.
+The STC Madrid Summit was a major gathering for trading enthusiasts and industry professionals. This event, held in Madrid, highlighted new trading strategies, provided networking opportunities, and underscored Zimtra’s role as a prominent industry partner.
 
 ---
 
