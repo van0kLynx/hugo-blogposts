@@ -1,21 +1,23 @@
 backend:
-  name: test-repo
-  repo: "user/repo"                   # Use the current directory as the Git repo
-  branch: main                  # Or the branch you want to use
-  local_backend: true     # Enables local backend mode for Decap CMS
+  name: git-gateway
+  repo: van0kLynx/hugo-blogposts  # Your GitHub repository
+  branch: main  # The branch you want to use
+  base_url: https://api.netlify.com
+  auth_endpoint: /auth
+  publish_mode: editorial_workflow
 
-site_url: http://localhost:1313  # Make sure this matches your local Hugo server URL
+site_url: "https://helpful-gumdrop-4afd41.netlify.app"  # Replace with your Netlify site URL
 
-media_folder: "assets/uploads"   # Folder where uploaded media will be stored
-public_folder: "/public/images" # Public URL for accessing media files
+media_folder: "static/images"     # Folder where uploaded media will be stored
+public_folder: "/public/images"    # Public URL for accessing media files
 
 collections:
-  - name: "posts"              # Unique identifier for the collection
-    label: "Posts"             # Display name in the CMS
-    folder: "content/blog"      # Folder where content files are stored
-    create: true               # Allows users to create new items in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # Format for generated slugs
-    fields:                    # Fields available for editing in the CMS
+  - name: "posts"
+    label: "Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm" }
       - { label: "Cover Image", name: "image", widget: "image", required: false }
