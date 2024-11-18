@@ -5,6 +5,10 @@ image: /images/bogdan.webp
 ---
 mister dodik is walking aroung the corner. BEWARE!
 
+
+
+![](/images/img_7931.jpg)
+
 Are you ready to dive into the heart of the trading world? Zimtra Managing Director Adam Lambert is set to participate in the London Trader Show on March 8, 2024. He'll be on hand to share in-person insights about Zimtra's exclusive deal, offering traders a unique opportunity to multiply their profits by 10x!
 
 \---
