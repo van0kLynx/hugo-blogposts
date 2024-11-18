@@ -1,4 +1,4 @@
-name: Pages Build and Deployment
+name: Deploy and Upload to S3
 
 on:
   push:
@@ -6,43 +6,36 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
+      # Step 1: Checkout code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js (if required for your Pages build process)
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
-
-      # Step 3: Install dependencies and build (adjust for your build process)
+      # Step 2: Install dependencies and build (if needed)
       - name: Install and build
         run: |
-          sudo apt-get update
-          sudo apt-get install hugo -y
+          npm install
           hugo
 
-      # Step 4: Deploy to GitHub Pages (your existing process)
+      # Step 3: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 
-      # Step 5: Configure AWS credentials
+      # Step 4: Configure AWS credentials
       - name: Configure AWS credentials
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: us-east-2
-        run: echo "AWS credentials configured."
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
 
-      # Step 6: Upload and rename index.html to news.html in S3
+      # Step 5: Upload index.html as news.html to S3
       - name: Upload index.html as news.html to S3
         run: |
-          aws s3 cp ./public/blog/index.html s3://user-landing-test/news.html --region $AWS_REGION
+          aws s3 cp ./public/blog/index.html s3://user-landing-test/news.html --region us-east-2
