@@ -17,7 +17,7 @@ jobs:
       # Step 2: Install dependencies and build (if needed)
       - name: Install and build
         run: |
-          npm install
+          sudo apt-get install hugo -y
           hugo
 
       # Step 3: Deploy to GitHub Pages
