@@ -39,9 +39,10 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: us-east-2
         run: echo "AWS credentials configured."
 
       # Step 6: Upload and rename index.html to news.html in S3
       - name: Upload index.html as news.html to S3
         run: |
-          aws s3 cp ./public/blog/index.html s3://user-landing-test/news.html --region us-east-2
+          aws s3 cp ./public/blog/index.html s3://user-landing-test/news.html --region $AWS_REGION
