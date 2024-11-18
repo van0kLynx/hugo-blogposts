@@ -1,0 +1,3 @@
+/#invite_token=:token /admin/#invite_token=:token 301
+/test-redirect /admin 301
+/* /index.html 200
