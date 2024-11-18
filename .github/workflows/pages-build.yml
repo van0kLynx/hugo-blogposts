@@ -1,0 +1,48 @@
+name: Pages Build and Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js (if required for your Pages build process)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # Step 3: Install dependencies and build (adjust for your build process)
+      - name: Install and build
+        run: |
+          sudo apt-get update
+          sudo apt-get install hugo -y
+          hugo
+
+      # Step 4: Deploy to GitHub Pages (your existing process)
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+
+      # Step 5: Configure AWS credentials
+      - name: Configure AWS credentials
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+        run: echo "AWS credentials configured."
+
+      # Step 6: Upload and rename index.html to news.html in S3
+      - name: Upload index.html as news.html to S3
+        run: |
+          aws s3 cp ./public/blog/index.html s3://user-landing-test/news.html --region $AWS_REGION
