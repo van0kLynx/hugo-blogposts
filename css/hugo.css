@@ -114,4 +114,6 @@
   margin-top: 0;
 }
 
-.blogpost-list-wrapper a img {}
+.blogpost-list-wrapper a img {
+  max-height: 170px;
+}
