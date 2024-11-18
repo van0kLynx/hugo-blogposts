@@ -10,7 +10,7 @@ if [[ -z "$AWS_ACCESS_KEY_ID" || -z "$AWS_SECRET_ACCESS_KEY" || -z "$AWS_REGION"
 fi
 
 # Define source and destination
-SOURCE_FILE="public/blog/index.html"  # Path to the file in the repository
+SOURCE_FILE="public/blogposts/index.html"  # Path to the file in the repository
 BUCKET_NAME="user-landing-test"       # S3 bucket name
 DEST_FILE="news.html"                 # New file name in S3
 
