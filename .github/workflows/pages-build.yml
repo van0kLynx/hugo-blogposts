@@ -35,7 +35,15 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
 
-      # Step 5: Upload index.html as news.html to S3
-      - name: Upload index.html as news.html to S3
+      # Step 5: Upload index.html and sync images folder to S3
+      - name: Upload index.html and sync images folder to S3
         run: |
           aws s3 cp ./public/blog/index.html s3://user-landing-test/news.html --region us-east-2
+
+          aws s3 sync ./public/images/ s3://user-landing-test/images/ --region us-east-2 --exact-timestamps --delete
+
+
+      # Step 6: Invalidate CloudFront Cache
+      - name: Invalidate CloudFront Cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id E2HJB44CNY8K41 --paths "/*"
