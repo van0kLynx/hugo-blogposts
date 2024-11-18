@@ -42,6 +42,7 @@ jobs:
 
           aws s3 sync ./public/images/ s3://user-landing-test/images/ --region us-east-2 --exact-timestamps --delete
 
+          aws s3 sync ./public/blog/ s3://user-landing-test/blogposts/ --region us-east-2 --exact-timestamps --delete
 
       # Step 6: Invalidate CloudFront Cache
       - name: Invalidate CloudFront Cache
