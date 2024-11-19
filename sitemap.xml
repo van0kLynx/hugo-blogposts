@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/blogposts/</loc>
-    <lastmod>2024-11-19T14:49:00+02:00</lastmod>
+    <loc>/blogposts/10rokiv/</loc>
+    <lastmod>2024-11-19T15:22:00+02:00</lastmod>
   </url><url>
-    <loc>/blogposts/blond-girl-from-odesa/</loc>
-    <lastmod>2024-11-19T14:49:00+02:00</lastmod>
+    <loc>/blogposts/</loc>
+    <lastmod>2024-11-19T15:22:00+02:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2024-11-19T15:22:00+02:00</lastmod>
+  </url><url>
+    <loc>/blogposts/a-new-title-for-a-new-team/</loc>
+    <lastmod>2024-11-19T15:17:00+02:00</lastmod>
+  </url><url>
+    <loc>/blogposts/blond-girl-from-odesa/</loc>
     <lastmod>2024-11-19T14:49:00+02:00</lastmod>
   </url><url>
     <loc>/blogposts/2024-11-18-title-bogdan/</loc>
