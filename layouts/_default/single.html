@@ -15,7 +15,7 @@
           <!-- Title and Meta -->
           <h1 class="blogpost-header-1">{{ .Title }}</h1>
           <div class="w-layout-hflex flex-block-36">
-            <div class="blogpost-caption">{{ .Params.author }}</div>
+            <span class="publisher">{{ .Params.publisher }}</span>
             <div class="blogpost-caption">{{ .Date.Format "January 2, 2006" }}</div>
           </div>
 
@@ -23,7 +23,9 @@
           <div class="blog-content">
             {{ .Content 
               | replaceRE "(<p>)(.*?)(</p>)" "<p class=\"blogpost-body-2\">$2</p>" 
+              | replaceRE "(<blockquote>)(.*?)(</blockquote>)" "<blockquote class=\"blogpost-body-1\">$2</blockquote>" 
               | replaceRE "(<li>)(.*?)(</li>)" "<li class=\"blogpost-body-2\">$2</li>" 
+              | replaceRE "<h1([^>]*)>" "<h1 class=\"blogpost-header-1\"$1>" 
               | replaceRE "<h2([^>]*)>" "<h2 class=\"blogpost-header-2\"$1>" 
               | replaceRE "<h3([^>]*)>" "<h3 class=\"blogpost-header-3\"$1>"
               | safeHTML }}
