@@ -1,11 +1,12 @@
 ---
 title: Launching the Future of Trading
+publisher: By Adam Lambert, Managing Director, Zimtra Asset Management
 date: 2023-06-12T16:05:00+03:00
 image: https://zimtra.com/images/bp1.png
 ---
 ![zimtra](https://zimtra.com/images/bp1.png)
 
-> Ready to take your trading to the next level? Welcome to Zimtra, where we partner with traders to provide top-notch resources and support. We’re thrilled to unveil our unparalleled buying power, low costs, flexible technology, unmatched customer service, and trusted partnership make Zimtra the go-to choice for traders looking to succeed. Join us today and experience the Zimtra difference!
+###### Ready to take your trading to the next level? Welcome to Zimtra, where we partner with traders to provide top-notch resources and support. We’re thrilled to unveil our unparalleled buying power, low costs, flexible technology, unmatched customer service, and trusted partnership make Zimtra the go-to choice for traders looking to succeed. Join us today and experience the Zimtra difference!
 
 ## Are you a trader looking to take your trading to the next level? Welcome to Zimtra!
 
