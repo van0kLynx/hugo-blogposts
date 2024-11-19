@@ -31,22 +31,7 @@ Professional trader layouts range from simple and focused to obscenely complex, 
 
 ### Examples
 
-```html
-<div class="div-block-16">
-  <a href="/images/sti-layout-1.ad1f46861.png" target="_blank" class="image-link auto w-inline-block"><img src="../images/sti-layout-1.ad1f4686.png" loading="lazy" sizes="(max-width: 479px) 82vw, (max-width: 991px) 28vw, 20vw" srcset="../images/sti-layout-1.ad1f4686-p-500.png 500w, ../images/sti-layout-1.ad1f4686-p-800.png 800w, ../images/sti-layout-1.ad1f4686-p-1080.png 1080w, ../images/sti-layout-1.ad1f4686-p-1600.png 1600w, ../images/sti-layout-1.ad1f4686-p-2000.png 2000w, ../images/sti-layout-1.ad1f4686.png 2267w" alt="" class="image-19 auto">
-    <div>Click to enlarge</div>
-  </a>
-  <a href="/images/sti-layout-2.a243c2d41.png" target="_blank" class="image-link w-inline-block"><img src="../images/sti-layout-2-1.png" loading="lazy" alt="" class="image-19 auto">
-    <div>Click to enlarge</div>
-  </a>
-  <a href="/images/sti-layout-3.d9c39c951.png" target="_blank" class="image-link w-inline-block"><img src="../images/sti-layout-3-1.png" loading="lazy" alt="" class="image-19 auto">
-    <div>Click to enlarge</div>
-  </a>
-</div>
-```
-
 ## Charting Package
-
 
 Charts, Indicators and Studies are a backbone of trading analysis. Sterling offers a rich charting environment to meet demanding needs.
 
@@ -67,20 +52,6 @@ Every millisecond counts when it comes to issuing orders, and optimized tools fo
 * Time & Sales window
 * Combined trading block - Chart, L2 Order Entry and Time & Sales grouped together form a responsive order entry block
 * Complete Locate monitor for Hard to Borrow symbols, as well as Easy to Borrow indicators
-
-```html
-<div class="div-block-16">
-  <a href="/images/level2-routes.d7a8646e1.png" target="_blank" class="image-link auto w-inline-block"><img src="../images/level2-routes.d7a8646e.png" loading="lazy" alt="" class="image-19 auto">
-    <div>Click to enlarge</div>
-  </a>
-  <a href="/images/locate-monitor.02c01c9d1.png" target="_blank" class="image-link auto w-inline-block"><img src="../images/locate-monitor.02c01c9d.png" loading="lazy" sizes="(max-width: 479px) 80vw, (max-width: 991px) 28vw, 20vw" srcset="../images/locate-monitor.02c01c9d-p-500.png 500w, ../images/locate-monitor.02c01c9d.png 663w" alt="" class="image-19 auto">
-    <div>Click to enlarge</div>
-  </a>
-  <a href="/images/trading-block.78fdcf011.png" target="_blank" class="image-link auto w-inline-block"><img src="../images/trading-block.78fdcf01.png" loading="lazy" sizes="(max-width: 479px) 76vw, (max-width: 767px) 25vw, 135.765625px" srcset="../images/trading-block.78fdcf01-p-500.png 500w, ../images/trading-block.78fdcf01.png 622w" alt="" class="image-19 auto">
-    <div>Click to enlarge</div>
-  </a>
-</div>
-```
 
 ## Position Summary
 
@@ -104,29 +75,6 @@ All trading decisions are made based on market information, and the better a tra
 * Exchange Alerts
 * Market Scanner
 * News feed and customizable RSS feeds window
-
-```html
-<div class="div-block-15">
-  <a href="/images/market-scanner.5c61b2911.png" target="_blank" class="image-link w-inline-block"><img src="../images/market-scanner.5c61b291.png" loading="lazy" alt="" class="image-19 auto">
-    <div>Click to enlarge</div>
-  </a>
-  <a href="/images/stock-watch.c859923c1.png" target="_blank" class="image-link w-inline-block"><img src="../images/stock-watch.c859923c.png" loading="lazy" alt="" class="image-19 auto">
-    <div>Click to enlarge</div>
-  </a>
-  <a href="/images/exchange-alerts.8fcdfc6e1.png" target="_blank" class="image-link w-inline-block"><img src="../images/exchange-alerts.8fcdfc6e.png" loading="lazy" alt="" class="image-19 auto">
-    <div>Click to enlarge</div>
-  </a>
-  <a href="/images/fundamental.e5bbd8401.png" target="_blank" class="image-link w-inline-block"><img src="../images/fundamental.e5bbd840.png" loading="lazy" alt="" class="image-19 auto">
-    <div>Click to enlarge</div>
-  </a>
-  <a href="/images/imbalance-monitor.726e7ce11.png" target="_blank" class="image-link w-inline-block"><img src="../images/imbalance-monitor.726e7ce1.png" loading="lazy" sizes="(max-width: 479px) 76vw, (max-width: 767px) 26vw, 151.0625px" srcset="../images/imbalance-monitor.726e7ce1-p-500.png 500w, ../images/imbalance-monitor.726e7ce1.png 592w" alt="" class="image-19 auto">
-    <div>Click to enlarge</div>
-  </a>
-  <a href="/images/risers-fallers.01dde3641.png" target="_blank" class="image-link w-inline-block"><img src="../images/risers-fallers.01dde364.png" loading="lazy" sizes="(max-width: 479px) 76vw, (max-width: 767px) 26vw, 170.640625px" srcset="../images/risers-fallers.01dde364-p-500.png 500w, ../images/risers-fallers.01dde364.png 1026w" alt="" class="image-19 auto">
-    <div>Click to enlarge</div>
-  </a>
- </div>
-```
 
 ## Extensibility
 
