@@ -23,3 +23,14 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ" }
       - { label: "Cover Image", name: "image", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "faq"  # New FAQ collection
+    label: "FAQ"
+    folder: "content/faq"  # Folder where FAQ markdown files will be stored
+    create: true  # Allows creating new FAQ items
+    slug: "{{slug}}"  # Generate slugs for files
+    fields:
+      - { label: "Question", name: "question", widget: "string", required: true }
+      - { label: "Answer", name: "answer", widget: "markdown", required: true }
+      - { label: "Category", name: "category", widget: "string", required: false }  # Optional category field
+      - { label: "Order", name: "order", widget: "number", required: false }  # Optional order field for sorting
