@@ -23,6 +23,7 @@
           <div class="blog-content">
             {{ .Content 
               | replaceRE "(<p>)(.*?)(</p>)" "<p class=\"blogpost-body-2\">$2</p>" 
+              | replaceRE "(<a>)(.*?)(</a>)" "<a class=\"link-4\">$2</a>" 
               | replaceRE "(<li>)(.*?)(</li>)" "<li class=\"blogpost-body-2\">$2</li>" 
               | replaceRE "<h1([^>]*)>" "<h1 class=\"blogpost-header-1\"$1>" 
               | replaceRE "<h2([^>]*)>" "<h2 class=\"blogpost-header-2\"$1>" 
