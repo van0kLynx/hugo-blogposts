@@ -36,9 +36,11 @@ jobs:
           aws-region: us-east-2
 
       # Step 5: Upload index.html and sync images folder to S3
-      - name: Upload index.html and sync images folder to S3
+      - name: Upload news.html as index.html and sync blogposts & images & css folders with S3
         run: |
           aws s3 cp ./public/blogposts/index.html s3://user-landing-test/news.html --region us-east-2
+          
+          aws s3 cp ./public/css/hugo.css s3://user-landing-test/css/ --region us-east-2
 
           aws s3 sync ./public/blogposts/ s3://user-landing-test/blogposts/ --region us-east-2 --exact-timestamps --delete
 
