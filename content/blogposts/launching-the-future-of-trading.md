@@ -5,12 +5,9 @@ image: https://zimtra.com/images/bp1.png
 ---
 ![zimtra](https://zimtra.com/images/bp1.png)
 
-Ready to take your trading to the next level? Welcome to Zimtra, where we partner with traders to provide top-notch resources and support. We’re thrilled to unveil our unparalleled buying power, low costs, flexible technology, unmatched customer service, and trusted partnership make Zimtra the go-to choice for traders looking to succeed. Join us today and experience the Zimtra difference!
---
+> Ready to take your trading to the next level? Welcome to Zimtra, where we partner with traders to provide top-notch resources and support. We’re thrilled to unveil our unparalleled buying power, low costs, flexible technology, unmatched customer service, and trusted partnership make Zimtra the go-to choice for traders looking to succeed. Join us today and experience the Zimtra difference!
 
-# Are you a trader looking to take your trading to the next level?
-
-**Welcome to Zimtra!**
+## Are you a trader looking to take your trading to the next level? Welcome to Zimtra!
 
 We believe in partnering with traders by providing top-notch resources and support. Zimtra is designed by traders for traders, so you get what you need to succeed.
 
